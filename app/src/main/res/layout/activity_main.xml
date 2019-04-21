@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leena.mypills.MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/app_bar_layout"
+                android:id="@+id/main_page_toolbar"
+                >
+
+            </include>
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="391dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="53dp"
+                android:background="@color/colorPrimaryDarker">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img_in_layout"
+                    android:layout_width="162dp"
+                    android:layout_height="157dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="41dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/textLight"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/name_in_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="133dp"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="Name"
+                    android:textColor="@color/textLight"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/profile_points"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="29dp"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="userName"
+                    android:textColor="@color/textLight"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/profile_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="47dp"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="Points"
+                    android:textColor="@color/textLight"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/profile_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/profile_username"
+                    android:layout_marginEnd="28dp"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="userAge"
+                    android:textColor="@color/textLight"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/profile_points"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="Points:"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_alignStart="@+id/profile_username"
+                    android:layout_below="@+id/name_in_profile"
+                    android:layout_marginTop="-133dp"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="Phone no. :"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_above="@+id/profile_username"
+                    android:layout_alignStart="@+id/profile_age"
+                    android:fontFamily="@font/advent_pro"
+                    android:text="Age:"
+                    android:textColor="@color/colorAccent" />
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/profile_layout">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/all_users_post_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="26dp"
+                    android:scrollbars="vertical" />
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/add_new_post"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignBottom="@+id/main_page_toolbar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@color/colorPrimaryer"
+                android:baselineAlignBottom="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_post_high" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginBottom="3dp"
+        app:menu="@menu/navigation_menu">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

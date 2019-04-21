@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ChatActivity.ChatActivity">
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="400dp"
+        android:layout_above="@+id/user_statement_container"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_chat_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_statement_container"
+        android:layout_width="326dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/et_user_statement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Message:"
+            android:imeOptions="actionDone"
+            android:inputType="textShortMessage" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/speak_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="82dp"
+        android:text="Speak" />
+</RelativeLayout>

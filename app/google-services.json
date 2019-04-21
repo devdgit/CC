@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "28166484066",
+    "firebase_url": "https://mypills-c2d76.firebaseio.com",
+    "project_id": "mypills-c2d76",
+    "storage_bucket": "mypills-c2d76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28166484066:android:97cf58ee65dad346",
+        "android_client_info": {
+          "package_name": "com.example.leena.mypills"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28166484066-i6afn9g1eg2dqcspqmba228tp3qkjdm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.leena.mypills",
+            "certificate_hash": "aaa3889d09f82b8bad026dc903beaba5dcdf13fd"
+          }
+        },
+        {
+          "client_id": "28166484066-gcddj13vcdovnpjn5macpgq46gasqi50.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "28166484066-gcddj13vcdovnpjn5macpgq46gasqi50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmlwgvHPb3oE0Hm-OQAZAPv3Gi7sNoX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28166484066-gcddj13vcdovnpjn5macpgq46gasqi50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

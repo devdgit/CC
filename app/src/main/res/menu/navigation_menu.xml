@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/nav_home"
+    android:title="Home"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/nav_add"
+        android:title="Add Image"
+        android:icon="@drawable/add_post"/>
+    <item
+        android:id="@+id/nav_find"
+        android:title="Find User"
+        android:icon="@drawable/find_people"/>
+
+    <item
+        android:id="@+id/nav_chatbot"
+        android:title="Chatbot"
+        android:icon="@drawable/username"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/exit"/>
+</menu>

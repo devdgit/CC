@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leena.mypills.SetupActivity"
+    >
+    <!--android:background="@drawable/register"-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/setup_profile_img"
+        android:layout_width="188dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/textDark"
+        app:civ_border_width="1dp"/>
+
+    <EditText
+        android:id="@+id/setup_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setup_profile_img"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textMultiLine"
+        android:padding="14dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/namee"/>
+
+    <EditText
+        android:id="@+id/setup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setup_fullname"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/phone"
+        android:ems="10"
+        android:hint="Phone no."
+        android:inputType="number"
+
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/setup_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setup_username"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="14dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/age"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setup_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Save"
+        android:padding="20dp"
+        android:theme="@style/PrimaryButton"/>
+
+</RelativeLayout>

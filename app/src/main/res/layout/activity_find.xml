@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindActivity"
+    android:background="@color/colorPrimaryDarker"
+   >
+
+    <include
+        android:id="@+id/find_friends_page_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/find_user_edit"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/advent_pro"
+        android:padding="5dp"
+        android:text="Find the user:"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/find_user_edit"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="123dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:hint="Enter the name"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textSize="22sp"
+        android:drawableLeft="@drawable/finduser"/>
+
+    <ImageButton
+        android:id="@+id/find_user_btn"
+        android:layout_width="71dp"
+        android:layout_height="62dp"
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignTop="@+id/find_user_edit"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/find" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/all_users_list"/>
+    </FrameLayout>
+
+</RelativeLayout>
