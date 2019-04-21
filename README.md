@@ -7,12 +7,14 @@ This is an application has the following features-
 3. View profile and photos.
 4. Find another user.
 5. Send points to another user.
+6. Chatbot
 
 This app is supported by **firebase** on its backend. i.e. It uses the following features-
 
 1. Firebase Authentication.
 2. Firebase Storage.
 3. Firebase realtime database.
+4. IBM Watson
 
 
 Here are some screenshots:
